@@ -7,8 +7,8 @@ export default function Blog({ posts }) {
     <>
       <Container>
         <h2>Blog ({posts.length} posts)</h2>
-        {posts.map((post) => (
-          <div>
+        {posts.map((post, index) => (
+          <div key={index}>
             <h3>{post.title}</h3>
             <p>{post.summary}</p>
             <hr />

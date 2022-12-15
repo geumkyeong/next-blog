@@ -1,9 +1,11 @@
+import Link from 'next/link';
+
 const Container = ({ children }) => {
   return (
     <>
       <nav>
-        <a href="/">Home</a>
-        <a href="/posts">Blog</a>
+        <Link href="/">Home</Link>
+        <Link href="/posts">Blog</Link>
       </nav>
       <div>{children}</div>
     </>
