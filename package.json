@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pre-build": "npm ci && npm run build"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
