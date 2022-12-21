@@ -1,8 +1,6 @@
-import Container from "../components/Container";
-
 export default function Home() {
   return (
-    <Container>
+    <>
       <h2>Hello, World!</h2>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -15,6 +13,6 @@ export default function Home() {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-    </Container>
+    </>
   );
 }

@@ -1,20 +1,14 @@
 import { getAllFilesFrontMatter } from '../../lib/mdx';
-import Container from "../../components/Container";
+import BlogPost from '../../components/BlogPost';
 
 export default function Blog({ posts }) {
   // Blog Post list
   return (
     <>
-      <Container>
         <h2>Blog ({posts.length} posts)</h2>
-        {posts.map((post, index) => (
-          <div key={index}>
-            <h3>{post.title}</h3>
-            <p>{post.summary}</p>
-            <hr />
-          </div>
+        {posts.map((frontMatter) => (
+          <BlogPost key={frontMatter.title} {...frontMatter} />
         ))}
-      </Container>
     </>
   );
 }

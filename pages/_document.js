@@ -7,7 +7,11 @@ const MyDocument = () => {
       <Head>
         <link
           rel="stylesheet"
-         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap"
         />
       </Head>
       <body>
